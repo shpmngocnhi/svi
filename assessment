@@ -1,0 +1,36 @@
+# VI assessment
+# HungPM17 + ChungNV10 Tasks
+
+- Enable Remote Registry => Running
+- Windows Management Instrumentation => Running
+- Enable built-in Administrator or create an account in Administrators group
+- Check the IP address and device specifications
+
+1. Enable built-in Administrator
+=> Run as administrator Computer Management => using account Mr Cuong PHam
+Set password: 123456
+
+2. Create an account in Administrators group
+- Press Win + S, type cmd, right-click Command Prompt, and select Run as administrator.
+
+net user AdminUser 123456 /add
+net localgroup Administrators AdminUser /add
+reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f
+
+3. Create the rules allow all for 192.168.20.0/24
+
+4. Check the IP address and device specifications
+Step 1: Check Your IP Address
+
+  ipconfig
+
+Step 2: Check Device Specifications
+
+  systeminfo
+
+Take a picture and send it to a Telegram group
+
+
+# TuHA10 Tasks
+- Read the information from pictures and add it to Nessus
+- Compare with the list of computers in Excel and mark the machines that have already been scanned for vulnerabilities
