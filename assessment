@@ -1,6 +1,7 @@
 cuong.phamduc@sydneyvietnaminstitute.org
 
 netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+netsh advfirewall firewall set rule group="Network Discovery" new enable=Yes
 
 
 # VI assessment
