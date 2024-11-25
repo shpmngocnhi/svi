@@ -1,5 +1,8 @@
 cuong.phamduc@sydneyvietnaminstitute.org
 
+netsh advfirewall firewall set rule group="File and Printer Sharing" new enable=Yes
+
+
 # VI assessment
 # HungPM17 + ChungNV10 Tasks
 
